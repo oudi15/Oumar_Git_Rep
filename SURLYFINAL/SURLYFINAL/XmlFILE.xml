@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RELATION name="COURSE">
+	<ATTRIBUTE name="CNUM" type="CHAR" length="8"/>
+	<ATTRIBUTE name="TITLE" type="CHAR" length="30"/>
+	<ATTRIBUTE name="CREDITS" type="NUM" length="4"/>
+	<TUPLE>
+		<VALUES name="CNUM" value="CS1410"/>
+		<VALUES name="TITLE" value="BUSINESSORIENTEDPROGRAMMING"/>
+		<VALUES name="CREDITS" value="3"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUM" value="CS1510"/>
+		<VALUES name="TITLE" value="INTROTOCOMPUTERSCIENCE"/>
+		<VALUES name="CREDITS" value="4"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUM" value="CS3155"/>
+		<VALUES name="TITLE" value="COMPUTERSCIENCE"/>
+		<VALUES name="CREDITS" value="5"/>
+	</TUPLE>
+</RELATION>
+<RELATION name="PREREQ">
+	<ATTRIBUTE name="CNUMl" type="CHAR" length="8"/>
+	<ATTRIBUTE name="CNUM2" type="CHAR" length="8"/>
+	<TUPLE>
+		<VALUES name="CNUMl" value="CS2510"/>
+		<VALUES name="CNUM2" value="CS1510"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUMl" value="CS3510"/>
+		<VALUES name="CNUM2" value="CS2860"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUMl" value="CS3155"/>
+		<VALUES name="CNUM2" value="CS1510"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUMl" value="CS3155"/>
+		<VALUES name="CNUM2" value="CS1610"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUMl" value="CS3155"/>
+		<VALUES name="CNUM2" value="M2860"/>
+	</TUPLE>
+</RELATION>
+<RELATION name="OFFERING">
+	<ATTRIBUTE name="CNUM" type="CHAR" length="8"/>
+	<ATTRIBUTE name="SECTION" type="NUM" length="5"/>
+	<ATTRIBUTE name="STARTHOUR" type="CHAR" length="5"/>
+	<ATTRIBUTE name="ENDHOUR" type="CHAR" length="5"/>
+	<ATTRIBUTE name="DAYS" type="CHAR" length="5"/>
+	<ATTRIBUTE name="ROOM" type="CHAR" length="10"/>
+	<ATTRIBUTE name="INSTRUCTOR" type="CHAR" length="20"/>
+	<TUPLE>
+		<VALUES name="CNUM" value="CS1410"/>
+		<VALUES name="SECTION" value="27935"/>
+		<VALUES name="STARTHOUR" value="8:55"/>
+		<VALUES name="ENDHOUR" value="9:45"/>
+		<VALUES name="DAYS" value="MWF"/>
+		<VALUES name="ROOM" value="H120"/>
+		<VALUES name="INSTRUCTOR" value="HAMPTON"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUM" value="CS1410"/>
+		<VALUES name="SECTION" value="27922"/>
+		<VALUES name="STARTHOUR" value="8:55"/>
+		<VALUES name="ENDHOUR" value="9:45"/>
+		<VALUES name="DAYS" value="MWF"/>
+		<VALUES name="ROOM" value="PER108"/>
+		<VALUES name="INSTRUCTOR" value="CHANDRA"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="CNUM" value="CS1410"/>
+		<VALUES name="SECTION" value="27977"/>
+		<VALUES name="STARTHOUR" value="11:05"/>
+		<VALUES name="ENDHOUR" value="11:55"/>
+		<VALUES name="DAYS" value="MWF"/>
+		<VALUES name="ROOM" value="P307"/>
+		<VALUES name="INSTRUCTOR" value="CHANDRA"/>
+	</TUPLE>
+</RELATION>
+<RELATION name="STAFF">
+	<ATTRIBUTE name="NAME" type="CHAR" length="20"/>
+	<ATTRIBUTE name="SPOUSE" type="CHAR" length="10"/>
+	<ATTRIBUTE name="RANK" type="CHAR" length="5"/>
+	<ATTRIBUTE name="CAMPUSADDR" type="CHAR" length="10"/>
+	<ATTRIBUTE name="EXTENSION" type="CHAR" length="9"/>
+</RELATION>
+<RELATION name="INTERESTS">
+	<ATTRIBUTE name="NAME" type="CHAR" length="20"/>
+	<ATTRIBUTE name="INTEREST" type="CHAR" length="30"/>
+	<TUPLE>
+		<VALUES name="NAME" value="THOMPSON"/>
+		<VALUES name="INTEREST" value="AI"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="NAME" value="THOMPSON"/>
+		<VALUES name="INTEREST" value="DBMS"/>
+	</TUPLE>
+</RELATION>
+<RELATION name="DEPT">
+	<ATTRIBUTE name="NAME" type="CHAR" length="20"/>
+	<ATTRIBUTE name="DEPT" type="CHAR" length="4"/>
+	<TUPLE>
+		<VALUES name="NAME" value="GREGORY"/>
+		<VALUES name="DEPT" value="CS"/>
+	</TUPLE>
+	<TUPLE>
+		<VALUES name="NAME" value="GREGORY"/>
+		<VALUES name="DEPT" value="MATH"/>
+	</TUPLE>
+</RELATION>
+
